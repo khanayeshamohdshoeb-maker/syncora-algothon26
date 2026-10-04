@@ -1,0 +1,6 @@
+{
+  "name": "SYNCORA - Offline-First Task Engine",
+  "description": "Work offline. Sync safely. Resilient offline-first task management with persistent IndexedDB outbox, versioned conflict resolution, and automated synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

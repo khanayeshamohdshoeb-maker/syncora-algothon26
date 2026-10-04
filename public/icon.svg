@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="50%" stop-color="#080e1e"/>
+      <stop offset="100%" stop-color="#040710"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+    <linearGradient id="glowGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#06b6d4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded canvas -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="508" height="508" x="2" y="2" rx="126" stroke="#1e293b" stroke-width="4" stroke-opacity="0.6"/>
+
+  <!-- Ambient glow circle -->
+  <circle cx="256" cy="256" r="140" fill="url(#glowGlow)"/>
+
+  <!-- SYNCORA Core: Dual Interlocking Harmonic Arcs (Continuity & Synchronization) -->
+  <g filter="url(#shadowFilter)">
+    <!-- Primary Upper Arc with Lead Node -->
+    <path d="M 170 310 C 145 285 140 240 160 200 C 185 150 245 135 300 150 C 355 165 385 210 375 255" 
+          stroke="url(#cyanGrad)" 
+          stroke-width="26" 
+          stroke-linecap="round"/>
+    
+    <!-- Primary Lower Arc with Reciprocal Node -->
+    <path d="M 342 202 C 367 227 372 272 352 312 C 327 362 267 377 212 362 C 157 347 127 302 137 257" 
+          stroke="url(#indigoGrad)" 
+          stroke-width="26" 
+          stroke-linecap="round"/>
+
+    <!-- Orbital Flow Data Spheres (Reliable Data Transfer) -->
+    <circle cx="375" cy="255" r="18" fill="#38bdf8"/>
+    <circle cx="375" cy="255" r="8" fill="#ffffff"/>
+
+    <circle cx="137" cy="257" r="18" fill="#818cf8"/>
+    <circle cx="137" cy="257" r="8" fill="#ffffff"/>
+
+    <!-- Center Bridge Anchor / Secure Synchronization Node -->
+    <circle cx="256" cy="256" r="28" fill="#0f172a" stroke="url(#cyanGrad)" stroke-width="8"/>
+    <circle cx="256" cy="256" r="12" fill="#38bdf8"/>
+  </g>
+</svg>
